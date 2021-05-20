@@ -9,6 +9,7 @@
   width: 90%;
   height: 49.2rem;
   padding: 1.8rem;
+  margin-bottom: 3.2rem;
   border-radius: 0.8rem;
   background-color: #ff6bcd;
 }
@@ -58,4 +59,16 @@
   border-radius: 0.8rem;
   border: none;
   resize: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.4rem;
+}
+
+.code-editor__button {
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  color: #fff;
+  background-color: #5081fb14;
+  font-size: 1.6rem;
 }

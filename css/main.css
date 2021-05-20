@@ -3,11 +3,13 @@
 @import url('./header.css');
 @import url('./menu.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap');
+
 :root {
   font-size: 62.5%;
 }
 
 body {
   background-color: #051d3b;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
