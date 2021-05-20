@@ -1,0 +1,12 @@
+@import url('./code-editor.css');
+@import url('./form.css');
+@import url('./header.css');
+@import url('./menu.css');
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #051d3b;
+}
