@@ -31,11 +31,39 @@
           <textarea
             name="code-editor"
             class="code-editor__input"
-            placeholder="Write your code here!"
+            placeholder="Digite aqui o seu código..."
           ></textarea>
         </article>
       </div>
-      <button class="code-editor__button">Visualizar com o highlight</button>
+      <button class="button code-editor__button">
+        Visualizar com o highlight
+      </button>
+    </section>
+    <section class="form">
+      <form>
+        <h3 class="form__subtitle">Seu Projeto</h3>
+        <input
+          class="form__project-title"
+          type="text"
+          placeholder="Nome do seu projeto"
+        />
+        <textarea
+          class="form__description"
+          placeholder="Descrição do seu projeto"
+        ></textarea>
+        <h3 class="form__subtitle">Personalização</h3>
+        <select name="select-language" class="form__select">
+          <option value="javascript" selected class="form__select--options">
+            Javascript
+          </option>
+          <option value="java" class="form__select--options">Java</option>
+          <option value="python" class="form__select--options">Python</option>
+        </select>
+        <input type="color" class="form__color" />
+        <button type="submit" class="button form__button">
+          Salvar projeto
+        </button>
+      </form>
     </section>
   </body>
 </html>

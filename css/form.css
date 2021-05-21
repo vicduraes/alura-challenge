@@ -1,0 +1,70 @@
+.form {
+  margin-top: 4rem;
+}
+
+.form__subtitle {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+.form__project-title {
+  width: 90%;
+  height: 3rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.form__description {
+  width: 90%;
+  height: 6rem;
+  border-radius: 0.8rem;
+  border: none;
+  resize: none;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 4rem;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.form__select {
+  width: 99%;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.form__select--options {
+  color: #051d3b;
+}
+
+.form__color {
+  width: 99%;
+  height: 5.6rem;
+  margin-bottom: 3.2rem;
+  padding: 0.5rem;
+  background: rgba(196, 196, 196, 0.01);
+  border: 0.1rem solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+}
+
+.form__button {
+  color: #051d3b;
+  background-color: #5081fb;
+  margin-bottom: 4rem;
+}
