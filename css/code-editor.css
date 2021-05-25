@@ -1,5 +1,9 @@
 .code-editor {
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .code-editor__border {
@@ -66,4 +70,19 @@
 .code-editor__button {
   color: #fff;
   background-color: #5081fb14;
+}
+
+@media only screen and (min-width: 768px) {
+  .code-editor__border {
+    height: 36.6rem;
+  }
+
+  .code-editor__body {
+    width: 92%;
+    height: 32.2rem;
+  }
+
+  .code-editor__input {
+    height: 27.4rem;
+  }
 }

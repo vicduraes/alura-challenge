@@ -11,6 +11,7 @@
 
 body {
   background-color: #051d3b;
+  margin: 1.6rem;
 }
 
 body,
@@ -31,4 +32,14 @@ option {
   border-radius: 0.8rem;
   border: none;
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 3.2rem;
+  }
+
+  .button {
+    width: 95%;
+  }
 }
