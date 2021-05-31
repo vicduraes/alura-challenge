@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__button {
+    border: none;
+    background: none;
+    width: 4.8rem;
+    height: 4.8rem;
+    cursor: pointer;
+  }
+
+  &__search-bar {
+    width: 59%;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1.4rem 1.6rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    &__search-bar {
+      display: inherit;
+    }
+
+    &__button__search {
+      display: none;
+    }
+  }
+}
