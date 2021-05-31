@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Navbar } from '../../components/Header/Header';
-import { CodeEditor } from '../../components/CodeEditor/CodeEditor';
+import Navbar from '../../components/Navbar/Navbar';
+import CodeEditor from '../../components/CodeEditor/CodeEditor';
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <CodeEditor />
     </>
   );

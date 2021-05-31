@@ -1,10 +1,14 @@
 import React from 'react';
 import './Navbar.scss';
 
+import logo from '../../assets/images/logo.svg';
+import menu from '../../assets/images/menu-icon.png';
+import search from '../../assets/images/search-icon.png';
+
 const Navbar = () => {
   return (
     <header className='header'>
-      <img src='./assets/img/logo.svg' alt='AluraDev logo' />
+      <img src={logo} alt='AluraDev logo' />
       <input
         type='text'
         name='search-bar'
@@ -13,10 +17,10 @@ const Navbar = () => {
       />
       <div>
         <button className='header__button header__button__search'>
-          <img src='./assets/img/search-icon.png' alt='search icon button' />
+          <img src={search} alt='search icon button' />
         </button>
         <button className='header__button'>
-          <img src='./assets/img/menu-icon.png' alt='menu button' />
+          <img src={menu} alt='menu button' />
         </button>
       </div>
     </header>

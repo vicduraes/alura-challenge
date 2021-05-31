@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Community from './pages/Community/Community';
 
-export default () => (
+const Routes = () => (
   <Router>
     <Switch>
       <Route exact path='/' component={Home} />
@@ -12,3 +12,5 @@ export default () => (
     </Switch>
   </Router>
 );
+
+export default Routes;
