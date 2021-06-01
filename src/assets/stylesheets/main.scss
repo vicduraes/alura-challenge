@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap');
 
+@import './variables';
+
 :root {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #051d3b;
+  background-color: $color-blue-dark;
   margin: 1.6rem;
 }
 
@@ -19,6 +21,10 @@ button,
 select,
 option {
   font-family: 'Inter', sans-serif;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .button {

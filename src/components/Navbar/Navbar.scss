@@ -1,3 +1,5 @@
+@import '../../assets/stylesheets/_variables.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -12,12 +14,13 @@
 
   &__search-bar {
     width: 59%;
+    height: 2.6rem;
     border-radius: 0.8rem;
     border: none;
     font-size: 1.6rem;
     padding: 1.4rem 1.6rem;
-    background-color: rgba(255, 255, 255, 0.16);
-    color: #fff;
+    background-color: $color-bg-gray;
+    color: $color-white;
     display: none;
   }
 }
