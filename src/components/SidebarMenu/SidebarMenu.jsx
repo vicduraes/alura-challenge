@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './SidebarMenu.scss';
 
@@ -10,25 +10,37 @@ const SidebarMenu = (props) => {
   const { isShown } = props;
   return (
     <>
-      <div className={isShown ? 'sidebar sidebar--animation' : 'sidebar'}>
-        <nav className='sidebar__nav'>
-          <ul className='sidebar__ul'>
-            <span>M e n u</span>
-            <li className='sidebar__items'>
-              <Link to='/' className='sidebar__items__link'>
-                <img src={codeEditorIcon} alt='menu button' />
-                Editor de código
-              </Link>
-            </li>
-            <li>
-              <Link to='/comunidade' className='sidebar__items__link'>
-                <img src={communityIcon} alt='menu button' />
-                Comunidade
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <section className={isShown ? 'overlay' : ''}>
+        <div className={isShown ? 'sidebar sidebar--animation' : 'sidebar'}>
+          <nav className='sidebar__nav'>
+            <ul className='sidebar__ul'>
+              <span>M e n u</span>
+              <li className='sidebar__items'>
+                <NavLink
+                  exact
+                  to='/'
+                  className='sidebar__items__link'
+                  activeClassName='sidebar__items__link--active'
+                >
+                  <img src={codeEditorIcon} alt='menu button' />
+                  Editor de código
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/comunidade'
+                  exact
+                  className='sidebar__items__link'
+                  activeClassName='sidebar__items__link--active'
+                >
+                  <img src={communityIcon} alt='menu button' />
+                  Comunidade
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </>
   );
 };

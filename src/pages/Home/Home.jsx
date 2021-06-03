@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import Navbar from '../../components/Navbar/Navbar';
-import CodeEditor from '../../components/CodeEditor/CodeEditor';
 import SidebarMenu from '../../components/SidebarMenu/SidebarMenu';
+import CodeEditor from '../../components/CodeEditor/CodeEditor';
 
 import './Home.scss';
 
