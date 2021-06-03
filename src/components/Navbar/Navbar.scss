@@ -21,7 +21,6 @@
     padding: 1.4rem 1.6rem;
     background-color: $color-bg-gray;
     color: $color-white;
-    display: none;
   }
 }
 
@@ -34,5 +33,11 @@
     &__button__search {
       display: none;
     }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header__search-bar {
+    width: 55%;
   }
 }
