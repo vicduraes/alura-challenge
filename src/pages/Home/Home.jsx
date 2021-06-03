@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Navbar clickMenu={clickMenu} isShown={isShown} />
       <div className='content'>
-        {isShown ? <SidebarMenu isShown={isShown} /> : null}
+        <SidebarMenu isShown={isShown} hidden={!isShown} />
         <CodeEditor />
       </div>
     </>

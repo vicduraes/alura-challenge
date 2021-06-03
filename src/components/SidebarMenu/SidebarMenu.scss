@@ -58,7 +58,7 @@
   .sidebar {
     position: absolute;
     top: 0;
-    right: 43rem;
+    right: 80rem;
     background-color: $color-bg-menu;
     margin-top: 1rem;
     border-radius: 0.8rem;
@@ -66,7 +66,7 @@
     z-index: 999;
     height: 84vh;
     overflow: hidden;
-    transition: right 2s ease-in-out;
+    transition: right 0.5s ease-in-out;
 
     &--animation {
       right: 1rem;

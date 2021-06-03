@@ -10,7 +10,7 @@ const Community = () => {
     <>
       <Navbar clickMenu={clickMenu} isShown={isShown} />
       <div className='content'>
-        {isShown ? <SidebarMenu isShown={isShown} /> : null}
+        <SidebarMenu isShown={isShown} hidden={!isShown} />
         <h3>Esta é a página da comunidade! Construção em andamento</h3>
       </div>
     </>
