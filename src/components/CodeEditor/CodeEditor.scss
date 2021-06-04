@@ -70,7 +70,21 @@
 
   &__button {
     color: $color-white;
-    background-color: $color-bg-button;
+    background-color: $color-button-outlined-normal;
+
+    &:hover {
+      background-color: $color-button-outlined-hover;
+      transition: 0.5s;
+    }
+
+    &:focus {
+      background-color: $color-button-outlined-focus;
+    }
+
+    &:active {
+      background-color: $color-button-outlined-hover;
+      border: 0.4rem solid $color-button-outlined-focus;
+    }
   }
 }
 
@@ -124,7 +138,7 @@
   }
 
   &__select--options {
-    color: $color-blue-dark;
+    color: $color-bg-blue;
   }
 
   &__color {
@@ -139,23 +153,38 @@
   }
 
   &__button {
-    color: $color-blue-dark;
-    background-color: $color-blue-light;
+    color: $color-bg-blue;
+    background-color: $color-blue-button-normal;
+
+    &:hover {
+      background-color: $color-blue-button-hover;
+      transition: 0.5s;
+    }
+
+    &:focus {
+      background-color: $color-blue-button-focus;
+    }
+
+    &:active {
+      background-color: $color-blue-button-hover;
+      border: 0.4rem solid $color-blue-button-border-pressed;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .code-editor__border {
-    height: 36.6rem;
-  }
+  .code-editor {
+    &__border {
+      height: 36.6rem;
+    }
+    &__body {
+      width: 92%;
+      height: 32.2rem;
+    }
 
-  .code-editor__body {
-    width: 92%;
-    height: 32.2rem;
-  }
-
-  .code-editor__input {
-    height: 27.4rem;
+    &__input {
+      height: 27.4rem;
+    }
   }
 
   form {
@@ -183,6 +212,46 @@
     &__subtitle {
       align-self: flex-start;
       margin-left: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .code-editor {
+    display: initial;
+
+    &__border {
+      width: 70rem;
+    }
+  }
+
+  .form {
+    margin-left: 4rem;
+
+    &__personalization {
+      display: initial;
+      width: 100%;
+    }
+
+    &__subtitle {
+      margin-left: 0;
+    }
+
+    &__select {
+      margin-right: 0;
+      width: inherit;
+    }
+
+    &__color {
+      width: inherit;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .code-editor {
+    &__border {
+      width: 40rem;
     }
   }
 }

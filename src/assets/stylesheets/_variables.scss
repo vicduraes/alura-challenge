@@ -1,13 +1,19 @@
 $color-white: #ffff;
 $color-bg-gray: #ffffff29;
-$color-bg-button: #5081fb14;
-$color-bg-menu: #2d415b;
+$color-bg-blue: #051d3b;
+$color-bg-blue-light: #2d415b;
 
 $color-black: #141414;
 $color-box-shadow: #0000003d;
 
-$color-blue-dark: #051d3b;
-$color-blue-light: #5081fb;
+$color-blue-button-normal: #5081fb;
+$color-blue-button-hover: #7ba4fc;
+$color-blue-button-focus: #96b9fd;
+$color-blue-button-border-pressed: #5081fbb8;
+
+$color-button-outlined-normal: #5081fb14;
+$color-button-outlined-hover: rgba(80, 129, 251, 0.161);
+$color-button-outlined-focus: rgba(80, 129, 251, 0.239);
 
 $color-green: #27c93f;
 $color-yellow: #ffbd2e;
