@@ -2,7 +2,7 @@
 
 .menu-button {
   display: none;
-  cursor: pointer;
+  border-radius: 1.6rem;
 }
 
 .sidebar {
@@ -87,5 +87,14 @@
 
   .menu-button {
     display: initial;
+
+    &:hover {
+      background-color: $color-button-outlined-normal;
+      transition: 0.5s;
+    }
+
+    &:active {
+      background-color: $color-button-outlined-hover;
+    }
   }
 }

@@ -1,17 +1,19 @@
 $color-white: #ffff;
-$color-bg-gray: #ffffff29;
 $color-bg-blue: #051d3b;
-$color-bg-blue-light: #2d415b;
+$color-bg-blue-light: rgb(45, 65, 91);
 
 $color-black: #141414;
-$color-box-shadow: #0000003d;
+$color-box-shadow: rgba(0, 0, 0, 0.239);
+
+$color-input-normal: rgba(255, 255, 255, 0.16);
+$color-input-hover: rgba(255, 255, 255, 0.24);
 
 $color-blue-button-normal: #5081fb;
 $color-blue-button-hover: #7ba4fc;
 $color-blue-button-focus: #96b9fd;
-$color-blue-button-border-pressed: #5081fbb8;
+$color-blue-button-border-pressed: rgba(80, 129, 251, 0.722);
 
-$color-button-outlined-normal: #5081fb14;
+$color-button-outlined-normal: rgba(80, 129, 251, 0.078);
 $color-button-outlined-hover: rgba(80, 129, 251, 0.161);
 $color-button-outlined-focus: rgba(80, 129, 251, 0.239);
 
