@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './CodeEditor.scss';
 
 const CodeEditor = () => {
+  const [bgColor, setBgColor] = useState('');
+
+  const handleBgColor = (event) => {
+    setBgColor(event.target.value);
+  };
+
   return (
     <>
       <section className='code-editor'>
-        <div className='code-editor__border'>
+        <div
+          className='code-editor__border'
+          style={{ backgroundColor: bgColor }}
+        >
           <article className='code-editor__body'>
             <div className='code-editor__balls'>
               <div className='code-editor__balls--red'></div>
@@ -53,7 +62,11 @@ const CodeEditor = () => {
                 Python
               </option>
             </select>
-            <input type='color' className='form__color' />
+            <input
+              type='color'
+              className='form__color'
+              onChange={handleBgColor}
+            />
           </div>
           <button type='submit' className='button form__button'>
             Salvar projeto
