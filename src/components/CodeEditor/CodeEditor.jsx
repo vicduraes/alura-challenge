@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import hljs from 'highlight.js';
 
 import './CodeEditor.scss';
+import '../../assets/stylesheets/dracula-highlight-theme.css';
 
 const CodeEditor = () => {
   const [bgColor, setBgColor] = useState('');
 
+  const [language, setLanguage] = useState('js');
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
+
   const handleBgColor = (event) => {
     setBgColor(event.target.value);
+  };
+
+  const handleSelectLanguage = (event) => {
+    setLanguage(event.target.value);
   };
 
   return (
@@ -22,14 +34,19 @@ const CodeEditor = () => {
               <div className='code-editor__balls--yellow'></div>
               <div className='code-editor__balls--green'></div>
             </div>
-            <textarea
-              name='code-editor'
-              className='code-editor__input'
-              placeholder='Digite aqui o seu código...'
-            ></textarea>
+            <pre>
+              <code
+                className={`${language} code-editor__input`}
+                contentEditable
+                aria-label='editor de codigo'
+              ></code>
+            </pre>
           </article>
         </div>
-        <button className='button code-editor__button'>
+        <button
+          className='button code-editor__button'
+          onClick={() => hljs.highlightAll()}
+        >
           Visualizar com o highlight
         </button>
       </section>
@@ -47,12 +64,12 @@ const CodeEditor = () => {
           ></textarea>
           <h3 className='form__subtitle'>Personalização</h3>
           <div className='form__personalization'>
-            <select name='select-language' className='form__select'>
-              <option
-                value='javascript'
-                selected
-                className='form__select--options'
-              >
+            <select
+              className='form__select'
+              onChange={handleSelectLanguage}
+              value={language}
+            >
+              <option value='js' className='form__select--options'>
                 Javascript
               </option>
               <option value='java' className='form__select--options'>

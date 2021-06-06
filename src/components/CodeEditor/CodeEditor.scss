@@ -57,13 +57,14 @@
   }
 
   &__input {
-    width: 100%;
+    width: 98%;
     height: 38.8rem;
     padding: 0;
     background-color: $color-black;
     resize: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
+    overflow-x: hidden;
 
     &:hover {
       background-color: $color-black;
@@ -168,7 +169,7 @@
     }
 
     &__input {
-      height: 27.4rem;
+      height: 26.4rem;
     }
   }
 
