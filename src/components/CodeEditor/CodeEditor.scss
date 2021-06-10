@@ -1,5 +1,11 @@
 @import '../../assets/stylesheets/_variables.scss';
 
+code {
+  white-space: pre-wrap;
+  resize: none;
+  height: 100%;
+}
+
 .code-editor {
   margin-top: 4rem;
   display: flex;
@@ -64,7 +70,7 @@
     resize: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
-    overflow-x: hidden;
+    line-height: 1.8rem;
 
     &:hover {
       background-color: $color-black;

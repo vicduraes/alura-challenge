@@ -7,7 +7,7 @@ import '../../assets/stylesheets/dracula-highlight-theme.css';
 const CodeEditor = () => {
   const [bgColor, setBgColor] = useState('');
 
-  const [language, setLanguage] = useState('js');
+  const [language, setLanguage] = useState('javascript');
 
   useEffect(() => {
     hljs.highlightAll();
@@ -39,6 +39,7 @@ const CodeEditor = () => {
                 className={`${language} code-editor__input`}
                 contentEditable
                 aria-label='editor de codigo'
+                spellCheck='false'
               ></code>
             </pre>
           </article>
@@ -69,7 +70,7 @@ const CodeEditor = () => {
               onChange={handleSelectLanguage}
               value={language}
             >
-              <option value='js' className='form__select--options'>
+              <option value='javascript' className='form__select--options'>
                 Javascript
               </option>
               <option value='java' className='form__select--options'>
